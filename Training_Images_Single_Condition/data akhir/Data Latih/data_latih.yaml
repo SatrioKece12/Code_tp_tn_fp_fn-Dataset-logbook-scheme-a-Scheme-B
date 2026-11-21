@@ -1,0 +1,6 @@
+path: C:/Users/acer/Downloads/Tugas Akhir Finals/dataset/data akhir/Data Latih
+train: images
+val: images
+
+nc: 3
+names: ['Botol Beling', 'Botol Plastik', 'Kaleng']
