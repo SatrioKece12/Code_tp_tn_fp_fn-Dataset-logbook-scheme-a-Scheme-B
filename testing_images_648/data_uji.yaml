@@ -1,0 +1,5 @@
+path: C:/Users/acer/Downloads/Tugas Akhir Finals/dataset/data akhir/Data Uji
+test: images
+
+nc: 3
+names: ['Botol Beling', 'Botol Plastik', 'Kaleng']
