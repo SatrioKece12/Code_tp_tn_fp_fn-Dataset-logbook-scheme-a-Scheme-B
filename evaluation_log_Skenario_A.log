@@ -1,0 +1,1370 @@
+==========================================================================================================================================================================
+ EVALUATION LOG - Skenario A - MODEL YOLO12n
+ Generated at: 2026-11-20 18:41:30 | IoU>=0.5 | Conf>=0.25 | Total gambar: 648
+==========================================================================================================================================================================
+
+[ METRIK DETEKSI DAN KLASIFIKASI PER KELAS (ONE-vs-REST) ]
+            Skenario/Kelas  TP   TN  FP  FN  Precision  Recall  F1-Score  Accuracy  Mean IoU  mAP@0.5
+ Skenario A - Botol Beling 119  362  70  97     0.6296  0.5509    0.5877    0.7423    0.9587   0.4864
+Skenario A - Botol Plastik  36  431   1 180     0.9730  0.1667    0.2846    0.7207    0.9628   0.1889
+       Skenario A - Kaleng 209  264 168   7     0.5544  0.9676    0.7049    0.7299    0.9676   0.5549
+        Skenario A - TOTAL 364 1057 239 284     0.6036  0.5617    0.5819    0.7310    0.9643   0.4101
+
+[ RINCIAN PERFORMA BERDASARKAN KONDISI PENCAHAYAAN ]
+Cahaya  Jumlah Gambar  TP   TN  FP  FN  Precision  Recall  F1-Score  Accuracy  Mean IoU  mAP@0.5
+Sedang            216 156  372  60  60     0.7222  0.7222    0.7222    0.8148    0.9686   0.6571
+Terang            216  93  349  83 123     0.5284  0.4306    0.4745    0.6821    0.9581   0.2681
+ Redup            216 115  336  96 101     0.5450  0.5324    0.5386    0.6960    0.9633   0.3998
+ TOTAL            648 364 1057 239 284     0.6036  0.5617    0.5819    0.7310    0.9643   0.4101
+
+[ CONFUSION MATRIX EVALUASI DETEKSI (Aktual vs Prediksi) ]
+Aktual / Prediksi  Botol Beling  Botol Plastik  Kaleng  Tidak Terdeteksi
+     Botol Beling           119              0      96                 1
+    Botol Plastik            68             36      72                40
+           Kaleng             2              1     209                 4
+
+[ DETAIL PER GAMBAR ]
+No    | Image Name                               | Lighting | Aktual         | Prediksi       | IoU    | Status
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--- KELOMPOK PENCAHAYAAN: SEDANG ---
+1     | bb01_0_s.jpg                             | Sedang   | Botol Beling   | Botol Beling   | 0.9852 | TP
+2     | bb01_15_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9740 | TP
+3     | bb01_30_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9731 | TP
+4     | bb01_45_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9710 | TP
+5     | bb01_60_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9787 | TP
+6     | bb01_75_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9645 | TP
+7     | bb01_90_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9807 | TP
+8     | bb01_105_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9632 | TP
+9     | bb01_120_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9661 | TP
+10    | bb01_135_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9701 | TP
+11    | bb01_150_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9794 | TP
+12    | bb01_165_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9650 | TP
+13    | bb01_180_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9545 | TP
+14    | bb01_195_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9853 | TP
+15    | bb01_210_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9745 | TP
+16    | bb01_225_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9831 | TP
+17    | bb01_240_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9873 | TP
+18    | bb01_255_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9735 | TP
+19    | bb01_270_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9575 | TP
+20    | bb01_285_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9765 | TP
+21    | bb01_300_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9699 | TP
+22    | bb01_315_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9629 | TP
+23    | bb01_330_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9890 | TP
+24    | bb01_345_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9704 | TP
+25    | bb02_0_s.jpg                             | Sedang   | Botol Beling   | Kaleng         | 0.9612 | FN+FP (salah kelas)
+26    | bb02_15_s.jpg                            | Sedang   | Botol Beling   | Kaleng         | 0.9553 | FN+FP (salah kelas)
+27    | bb02_30_s.jpg                            | Sedang   | Botol Beling   | Kaleng         | 0.9630 | FN+FP (salah kelas)
+28    | bb02_45_s.jpg                            | Sedang   | Botol Beling   | Kaleng         | 0.9673 | FN+FP (salah kelas)
+29    | bb02_60_s.jpg                            | Sedang   | Botol Beling   | Kaleng         | 0.9760 | FN+FP (salah kelas)
+30    | bb02_75_s.jpg                            | Sedang   | Botol Beling   | Kaleng         | 0.9665 | FN+FP (salah kelas)
+31    | bb02_90_s.jpg                            | Sedang   | Botol Beling   | Kaleng         | 0.9877 | FN+FP (salah kelas)
+32    | bb02_105_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9678 | FN+FP (salah kelas)
+33    | bb02_120_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9660 | FN+FP (salah kelas)
+34    | bb02_135_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9715 | FN+FP (salah kelas)
+35    | bb02_150_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9707 | FN+FP (salah kelas)
+36    | bb02_165_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9563 | FN+FP (salah kelas)
+37    | bb02_180_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9686 | FN+FP (salah kelas)
+38    | bb02_195_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9637 | FN+FP (salah kelas)
+39    | bb02_210_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9790 | FN+FP (salah kelas)
+40    | bb02_225_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9632 | FN+FP (salah kelas)
+41    | bb02_240_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9757 | FN+FP (salah kelas)
+42    | bb02_255_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9804 | FN+FP (salah kelas)
+43    | bb02_270_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9739 | FN+FP (salah kelas)
+44    | bb02_285_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9712 | FN+FP (salah kelas)
+45    | bb02_300_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9700 | FN+FP (salah kelas)
+46    | bb02_315_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9710 | FN+FP (salah kelas)
+47    | bb02_330_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9698 | FN+FP (salah kelas)
+48    | bb02_345_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9861 | FN+FP (salah kelas)
+49    | bb03_0_s.jpg                             | Sedang   | Botol Beling   | Botol Beling   | 0.9750 | TP
+50    | bb03_15_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9625 | TP
+51    | bb03_30_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9777 | TP
+52    | bb03_45_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9792 | TP
+53    | bb03_60_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9747 | TP
+54    | bb03_75_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9585 | TP
+55    | bb03_90_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9607 | TP
+56    | bb03_105_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9796 | TP
+57    | bb03_120_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9662 | TP
+58    | bb03_135_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9792 | TP
+59    | bb03_150_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9797 | TP
+60    | bb03_165_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9507 | TP
+61    | bb03_180_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9696 | TP
+62    | bb03_195_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9615 | TP
+63    | bb03_210_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9709 | TP
+64    | bb03_225_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9777 | TP
+65    | bb03_240_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9832 | TP
+66    | bb03_255_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9673 | TP
+67    | bb03_270_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9774 | TP
+68    | bb03_285_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9606 | TP
+69    | bb03_300_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9764 | TP
+70    | bb03_315_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9752 | TP
+71    | bb03_330_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9706 | TP
+72    | bb03_345_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9673 | TP
+73    | bp01_0_s.jpg                             | Sedang   | Botol Plastik  | Kaleng         | 0.9250 | FN+FP (salah kelas)
+74    | bp01_15_s.jpg                            | Sedang   | Botol Plastik  | Kaleng         | 0.9462 | FN+FP (salah kelas)
+75    | bp01_30_s.jpg                            | Sedang   | Botol Plastik  | Kaleng         | 0.9511 | FN+FP (salah kelas)
+76    | bp01_45_s.jpg                            | Sedang   | Botol Plastik  | Kaleng         | 0.9574 | FN+FP (salah kelas)
+77    | bp01_60_s.jpg                            | Sedang   | Botol Plastik  | Kaleng         | 0.9547 | FN+FP (salah kelas)
+78    | bp01_75_s.jpg                            | Sedang   | Botol Plastik  | Kaleng         | 0.9460 | FN+FP (salah kelas)
+79    | bp01_90_s.jpg                            | Sedang   | Botol Plastik  | Kaleng         | 0.9574 | FN+FP (salah kelas)
+80    | bp01_105_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9633 | FN+FP (salah kelas)
+81    | bp01_120_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9668 | FN+FP (salah kelas)
+82    | bp01_135_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9566 | FN+FP (salah kelas)
+83    | bp01_150_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9703 | FN+FP (salah kelas)
+84    | bp01_165_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9573 | FN+FP (salah kelas)
+85    | bp01_180_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9420 | FN+FP (salah kelas)
+86    | bp01_195_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9480 | FN+FP (salah kelas)
+87    | bp01_210_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9668 | FN+FP (salah kelas)
+88    | bp01_225_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9819 | FN+FP (salah kelas)
+89    | bp01_240_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9787 | FN+FP (salah kelas)
+90    | bp01_255_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9725 | FN+FP (salah kelas)
+91    | bp01_270_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9633 | FN+FP (salah kelas)
+92    | bp01_285_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9637 | FN+FP (salah kelas)
+93    | bp01_300_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9437 | FN+FP (salah kelas)
+94    | bp01_315_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9662 | FN+FP (salah kelas)
+95    | bp01_330_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9495 | FN+FP (salah kelas)
+96    | bp01_345_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9662 | FN+FP (salah kelas)
+97    | bp02_0_s.jpg                             | Sedang   | Botol Plastik  | Botol Plastik  | 0.9255 | TP
+98    | bp02_15_s.jpg                            | Sedang   | Botol Plastik  | Botol Plastik  | 0.9552 | TP
+99    | bp02_30_s.jpg                            | Sedang   | Botol Plastik  | Botol Plastik  | 0.9624 | TP
+100   | bp02_45_s.jpg                            | Sedang   | Botol Plastik  | Botol Plastik  | 0.9560 | TP
+101   | bp02_60_s.jpg                            | Sedang   | Botol Plastik  | Botol Plastik  | 0.9650 | TP
+102   | bp02_75_s.jpg                            | Sedang   | Botol Plastik  | Botol Beling   | 0.9531 | FN+FP (salah kelas)
+103   | bp02_90_s.jpg                            | Sedang   | Botol Plastik  | Botol Plastik  | 0.9624 | TP
+104   | bp02_105_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9689 | TP
+105   | bp02_120_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9612 | TP
+106   | bp02_135_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9721 | TP
+107   | bp02_150_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9580 | TP
+108   | bp02_165_s.jpg                           | Sedang   | Botol Plastik  | Botol Beling   | 0.9812 | FN+FP (salah kelas)
+109   | bp02_180_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9518 | TP
+110   | bp02_195_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9572 | TP
+111   | bp02_210_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9747 | TP
+112   | bp02_225_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9666 | TP
+113   | bp02_240_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9760 | TP
+114   | bp02_255_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9689 | TP
+115   | bp02_270_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9531 | TP
+116   | bp02_285_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9623 | TP
+117   | bp02_300_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9750 | TP
+118   | bp02_315_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9674 | TP
+119   | bp02_330_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9537 | TP
+120   | bp02_345_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9416 | TP
+121   | bp03_0_s.jpg                             | Sedang   | Botol Plastik  | Botol Plastik  | 0.9372 | TP
+122   | bp03_15_s.jpg                            | Sedang   | Botol Plastik  | Botol Plastik  | 0.9500 | TP
+123   | bp03_30_s.jpg                            | Sedang   | Botol Plastik  | Botol Plastik  | 0.9760 | TP
+124   | bp03_45_s.jpg                            | Sedang   | Botol Plastik  | Botol Plastik  | 0.9771 | TP
+125   | bp03_60_s.jpg                            | Sedang   | Botol Plastik  | Botol Plastik  | 0.9471 | TP
+126   | bp03_75_s.jpg                            | Sedang   | Botol Plastik  | Botol Plastik  | 0.9631 | TP
+127   | bp03_90_s.jpg                            | Sedang   | Botol Plastik  | Botol Plastik  | 0.9708 | TP
+128   | bp03_105_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9889 | TP
+129   | bp03_120_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9613 | TP
+130   | bp03_135_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9730 | FN+FP (salah kelas)
+131   | bp03_150_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9605 | FN+FP (salah kelas)
+132   | bp03_165_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9520 | FN+FP (salah kelas)
+133   | bp03_180_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9627 | FN+FP (salah kelas)
+134   | bp03_195_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9653 | FN+FP (salah kelas)
+135   | bp03_210_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9468 | FN+FP (salah kelas)
+136   | bp03_225_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9510 | FN+FP (salah kelas)
+137   | bp03_240_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9638 | FN+FP (salah kelas)
+138   | bp03_255_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9721 | TP
+139   | bp03_270_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9689 | TP
+140   | bp03_285_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9637 | TP
+141   | bp03_300_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9790 | TP
+142   | bp03_315_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9787 | FN+FP (salah kelas)
+143   | bp03_330_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9688 | TP
+144   | bp03_345_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9597 | FN+FP (salah kelas)
+145   | k01_0_s.jpg                              | Sedang   | Kaleng         | Kaleng         | 0.9875 | TP
+146   | k01_15_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9745 | TP
+147   | k01_30_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9700 | TP
+148   | k01_45_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9787 | TP
+149   | k01_60_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9766 | TP
+150   | k01_75_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9742 | TP
+151   | k01_90_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9797 | TP
+152   | k01_105_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9736 | TP
+153   | k01_120_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9774 | TP
+154   | k01_135_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9737 | TP
+155   | k01_150_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9640 | TP
+156   | k01_165_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9736 | TP
+157   | k01_180_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9736 | TP
+158   | k01_195_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9737 | TP
+159   | k01_210_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9679 | TP
+160   | k01_225_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9733 | TP
+161   | k01_240_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9734 | TP
+162   | k01_255_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9772 | TP
+163   | k01_270_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9873 | TP
+164   | k01_285_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9716 | TP
+165   | k01_300_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9672 | TP
+166   | k01_315_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9699 | TP
+167   | k01_330_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9628 | TP
+168   | k01_345_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9682 | TP
+169   | k02_0_s.jpg                              | Sedang   | Kaleng         | Kaleng         | 0.9659 | TP
+170   | k02_15_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9617 | TP
+171   | k02_30_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9714 | TP
+172   | k02_45_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9611 | TP
+173   | k02_60_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9699 | TP
+174   | k02_75_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9679 | TP
+175   | k02_90_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9636 | TP
+176   | k02_105_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9714 | TP
+177   | k02_120_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9631 | TP
+178   | k02_135_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9727 | TP
+179   | k02_150_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9756 | TP
+180   | k02_165_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9673 | TP
+181   | k02_180_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9579 | TP
+182   | k02_195_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9448 | TP
+183   | k02_210_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9646 | TP
+184   | k02_225_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9728 | TP
+185   | k02_240_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9749 | TP
+186   | k02_255_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9518 | TP
+187   | k02_270_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9726 | TP
+188   | k02_285_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9706 | TP
+189   | k02_300_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9718 | TP
+190   | k02_315_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9796 | TP
+191   | k02_330_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9635 | TP
+192   | k02_345_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9790 | TP
+193   | k03_0_s.jpg                              | Sedang   | Kaleng         | Kaleng         | 0.9711 | TP
+194   | k03_15_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9613 | TP
+195   | k03_30_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9661 | TP
+196   | k03_45_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9678 | TP
+197   | k03_60_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9717 | TP
+198   | k03_75_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9584 | TP
+199   | k03_90_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9894 | TP
+200   | k03_105_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9676 | TP
+201   | k03_120_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9691 | TP
+202   | k03_135_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9736 | TP
+203   | k03_150_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9678 | TP
+204   | k03_165_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9668 | TP
+205   | k03_180_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9483 | TP
+206   | k03_195_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9583 | TP
+207   | k03_210_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9703 | TP
+208   | k03_225_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9832 | TP
+209   | k03_240_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9717 | TP
+210   | k03_255_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9580 | TP
+211   | k03_270_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9670 | TP
+212   | k03_285_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9603 | TP
+213   | k03_300_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9593 | TP
+214   | k03_315_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9572 | TP
+215   | k03_330_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9638 | TP
+216   | k03_345_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9711 | TP
+
+--- KELOMPOK PENCAHAYAAN: TERANG ---
+1     | bb01_0_t.jpg                             | Terang   | Botol Beling   | Botol Beling   | 0.9609 | TP
+2     | bb01_15_t.jpg                            | Terang   | Botol Beling   | Botol Beling   | 0.8752 | TP
+3     | bb01_30_t.jpg                            | Terang   | Botol Beling   | Botol Beling   | 0.7679 | TP
+4     | bb01_45_t.jpg                            | Terang   | Botol Beling   | Botol Beling   | 0.9772 | TP
+5     | bb01_60_t.jpg                            | Terang   | Botol Beling   | Botol Beling   | 0.9396 | TP
+6     | bb01_75_t.jpg                            | Terang   | Botol Beling   | Botol Beling   | 0.3508 | FN (IoU rendah)
+7     | bb01_90_t.jpg                            | Terang   | Botol Beling   | Botol Beling   | 0.9676 | TP
+8     | bb01_105_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.9467 | TP
+9     | bb01_120_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.9667 | TP
+10    | bb01_135_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.9688 | TP
+11    | bb01_150_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.9467 | TP
+12    | bb01_165_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.9532 | TP
+13    | bb01_180_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.9046 | TP
+14    | bb01_195_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.9427 | TP
+15    | bb01_210_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.9070 | TP
+16    | bb01_225_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.9542 | TP
+17    | bb01_240_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.9796 | TP
+18    | bb01_255_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.9843 | TP
+19    | bb01_270_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.9803 | TP
+20    | bb01_285_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.8980 | TP
+21    | bb01_300_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.8224 | TP
+22    | bb01_315_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.9416 | TP
+23    | bb01_330_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.9584 | TP
+24    | bb01_345_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.5799 | TP
+25    | bb02_0_t.jpg                             | Terang   | Botol Beling   | Kaleng         | 0.9753 | FN+FP (salah kelas)
+26    | bb02_15_t.jpg                            | Terang   | Botol Beling   | Kaleng         | 0.9643 | FN+FP (salah kelas)
+27    | bb02_30_t.jpg                            | Terang   | Botol Beling   | Kaleng         | 0.9663 | FN+FP (salah kelas)
+28    | bb02_45_t.jpg                            | Terang   | Botol Beling   | Kaleng         | 0.9603 | FN+FP (salah kelas)
+29    | bb02_60_t.jpg                            | Terang   | Botol Beling   | Kaleng         | 0.9815 | FN+FP (salah kelas)
+30    | bb02_75_t.jpg                            | Terang   | Botol Beling   | Kaleng         | 0.9738 | FN+FP (salah kelas)
+31    | bb02_90_t.jpg                            | Terang   | Botol Beling   | Kaleng         | 0.9533 | FN+FP (salah kelas)
+32    | bb02_105_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9813 | FN+FP (salah kelas)
+33    | bb02_120_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9639 | FN+FP (salah kelas)
+34    | bb02_135_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9725 | FN+FP (salah kelas)
+35    | bb02_150_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9767 | FN+FP (salah kelas)
+36    | bb02_165_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9634 | FN+FP (salah kelas)
+37    | bb02_180_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9731 | FN+FP (salah kelas)
+38    | bb02_195_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9764 | FN+FP (salah kelas)
+39    | bb02_210_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9736 | FN+FP (salah kelas)
+40    | bb02_225_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9654 | FN+FP (salah kelas)
+41    | bb02_240_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9743 | FN+FP (salah kelas)
+42    | bb02_255_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9510 | FN+FP (salah kelas)
+43    | bb02_270_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9605 | FN+FP (salah kelas)
+44    | bb02_285_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.8630 | FN+FP (salah kelas)
+45    | bb02_300_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9281 | FN+FP (salah kelas)
+46    | bb02_315_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9776 | FN+FP (salah kelas)
+47    | bb02_330_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9815 | FN+FP (salah kelas)
+48    | bb02_345_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9880 | FN+FP (salah kelas)
+49    | bb03_0_t.jpg                             | Terang   | Botol Beling   | Kaleng         | 0.9686 | FN+FP (salah kelas)
+50    | bb03_15_t.jpg                            | Terang   | Botol Beling   | Kaleng         | 0.9461 | FN+FP (salah kelas)
+51    | bb03_30_t.jpg                            | Terang   | Botol Beling   | Kaleng         | 0.9530 | FN+FP (salah kelas)
+52    | bb03_45_t.jpg                            | Terang   | Botol Beling   | Kaleng         | 0.9725 | FN+FP (salah kelas)
+53    | bb03_60_t.jpg                            | Terang   | Botol Beling   | Kaleng         | 0.9752 | FN+FP (salah kelas)
+54    | bb03_75_t.jpg                            | Terang   | Botol Beling   | Kaleng         | 0.9728 | FN+FP (salah kelas)
+55    | bb03_90_t.jpg                            | Terang   | Botol Beling   | Kaleng         | 0.9653 | FN+FP (salah kelas)
+56    | bb03_105_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9708 | FN+FP (salah kelas)
+57    | bb03_120_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9723 | FN+FP (salah kelas)
+58    | bb03_135_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9574 | FN+FP (salah kelas)
+59    | bb03_150_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9647 | FN+FP (salah kelas)
+60    | bb03_165_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9716 | FN+FP (salah kelas)
+61    | bb03_180_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9705 | FN+FP (salah kelas)
+62    | bb03_195_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9243 | FN+FP (salah kelas)
+63    | bb03_210_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9407 | FN+FP (salah kelas)
+64    | bb03_225_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9560 | FN+FP (salah kelas)
+65    | bb03_240_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9798 | FN+FP (salah kelas)
+66    | bb03_255_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9632 | FN+FP (salah kelas)
+67    | bb03_270_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9513 | FN+FP (salah kelas)
+68    | bb03_285_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9616 | FN+FP (salah kelas)
+69    | bb03_300_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9812 | FN+FP (salah kelas)
+70    | bb03_315_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9785 | FN+FP (salah kelas)
+71    | bb03_330_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9515 | FN+FP (salah kelas)
+72    | bb03_345_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9562 | FN+FP (salah kelas)
+73    | bp01_0_t.jpg                             | Terang   | Botol Plastik  | Kaleng         | 0.9513 | FN+FP (salah kelas)
+74    | bp01_15_t.jpg                            | Terang   | Botol Plastik  | Kaleng         | 0.9458 | FN+FP (salah kelas)
+75    | bp01_30_t.jpg                            | Terang   | Botol Plastik  | Kaleng         | 0.9670 | FN+FP (salah kelas)
+76    | bp01_45_t.jpg                            | Terang   | Botol Plastik  | Kaleng         | 0.9590 | FN+FP (salah kelas)
+77    | bp01_60_t.jpg                            | Terang   | Botol Plastik  | Kaleng         | 0.9660 | FN+FP (salah kelas)
+78    | bp01_75_t.jpg                            | Terang   | Botol Plastik  | Kaleng         | 0.9417 | FN+FP (salah kelas)
+79    | bp01_90_t.jpg                            | Terang   | Botol Plastik  | Kaleng         | 0.9735 | FN+FP (salah kelas)
+80    | bp01_105_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.9800 | FN+FP (salah kelas)
+81    | bp01_120_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.9777 | FN+FP (salah kelas)
+82    | bp01_135_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.9754 | FN+FP (salah kelas)
+83    | bp01_150_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.9618 | FN+FP (salah kelas)
+84    | bp01_165_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.9394 | FN+FP (salah kelas)
+85    | bp01_180_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.9787 | FN+FP (salah kelas)
+86    | bp01_195_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.9363 | FN+FP (salah kelas)
+87    | bp01_210_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.9364 | FN+FP (salah kelas)
+88    | bp01_225_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.9550 | FN+FP (salah kelas)
+89    | bp01_240_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.9520 | FN+FP (salah kelas)
+90    | bp01_255_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.9756 | FN+FP (salah kelas)
+91    | bp01_270_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.9748 | FN+FP (salah kelas)
+92    | bp01_285_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.9618 | FN+FP (salah kelas)
+93    | bp01_300_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.9665 | FN+FP (salah kelas)
+94    | bp01_315_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.9622 | FN+FP (salah kelas)
+95    | bp01_330_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.9469 | FN+FP (salah kelas)
+96    | bp01_345_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.9455 | FN+FP (salah kelas)
+97    | bp02_0_t.jpg                             | Terang   | Botol Plastik  | Botol Plastik  | 0.0417 | FN (IoU rendah)
+98    | bp02_15_t.jpg                            | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+99    | bp02_30_t.jpg                            | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+100   | bp02_45_t.jpg                            | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+101   | bp02_60_t.jpg                            | Terang   | Botol Plastik  | Botol Beling   | 0.0333 | FN+FP (salah kelas)
+102   | bp02_75_t.jpg                            | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+103   | bp02_90_t.jpg                            | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+104   | bp02_105_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+105   | bp02_120_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+106   | bp02_135_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+107   | bp02_150_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+108   | bp02_165_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+109   | bp02_180_t.jpg                           | Terang   | Botol Plastik  | Botol Plastik  | 0.0375 | FN (IoU rendah)
+110   | bp02_195_t.jpg                           | Terang   | Botol Plastik  | Botol Beling   | 0.0784 | FN+FP (salah kelas)
+111   | bp02_210_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+112   | bp02_225_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+113   | bp02_240_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+114   | bp02_255_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+115   | bp02_270_t.jpg                           | Terang   | Botol Plastik  | Botol Plastik  | 0.0517 | FN (IoU rendah)
+116   | bp02_285_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+117   | bp02_300_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+118   | bp02_315_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+119   | bp02_330_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+120   | bp02_345_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+121   | bp03_0_t.jpg                             | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+122   | bp03_15_t.jpg                            | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+123   | bp03_30_t.jpg                            | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+124   | bp03_45_t.jpg                            | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+125   | bp03_60_t.jpg                            | Terang   | Botol Plastik  | Kaleng         | 0.9754 | FN+FP (salah kelas)
+126   | bp03_75_t.jpg                            | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+127   | bp03_90_t.jpg                            | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+128   | bp03_105_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+129   | bp03_120_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+130   | bp03_135_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+131   | bp03_150_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+132   | bp03_165_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+133   | bp03_180_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.1709 | FN+FP (salah kelas)
+134   | bp03_195_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.1926 | FN+FP (salah kelas)
+135   | bp03_210_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.4171 | FN+FP (salah kelas)
+136   | bp03_225_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.3671 | FN+FP (salah kelas)
+137   | bp03_240_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+138   | bp03_255_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.8980 | FN+FP (salah kelas)
+139   | bp03_270_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.8614 | FN+FP (salah kelas)
+140   | bp03_285_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+141   | bp03_300_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+142   | bp03_315_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+143   | bp03_330_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+144   | bp03_345_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+145   | k01_0_t.jpg                              | Terang   | Kaleng         | Kaleng         | 0.9761 | TP
+146   | k01_15_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9733 | TP
+147   | k01_30_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9753 | TP
+148   | k01_45_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9760 | TP
+149   | k01_60_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9785 | TP
+150   | k01_75_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9781 | TP
+151   | k01_90_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9884 | TP
+152   | k01_105_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9701 | TP
+153   | k01_120_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9772 | TP
+154   | k01_135_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9727 | TP
+155   | k01_150_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9827 | TP
+156   | k01_165_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9761 | TP
+157   | k01_180_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9897 | TP
+158   | k01_195_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9696 | TP
+159   | k01_210_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9659 | TP
+160   | k01_225_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9774 | TP
+161   | k01_240_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9796 | TP
+162   | k01_255_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9749 | TP
+163   | k01_270_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9795 | TP
+164   | k01_285_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9765 | TP
+165   | k01_300_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9799 | TP
+166   | k01_315_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9771 | TP
+167   | k01_330_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9792 | TP
+168   | k01_345_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9691 | TP
+169   | k02_0_t.jpg                              | Terang   | Kaleng         | Kaleng         | 0.9465 | TP
+170   | k02_15_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9499 | TP
+171   | k02_30_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9678 | TP
+172   | k02_45_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9545 | TP
+173   | k02_60_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9566 | TP
+174   | k02_75_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9771 | TP
+175   | k02_90_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9707 | TP
+176   | k02_105_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9768 | TP
+177   | k02_120_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9723 | TP
+178   | k02_135_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9581 | TP
+179   | k02_150_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9748 | TP
+180   | k02_165_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9718 | TP
+181   | k02_180_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9516 | TP
+182   | k02_195_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9533 | TP
+183   | k02_210_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9652 | TP
+184   | k02_225_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9730 | TP
+185   | k02_240_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9762 | TP
+186   | k02_255_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9670 | TP
+187   | k02_270_t.jpg                            | Terang   | Kaleng         | Botol Beling   | 0.9883 | FN+FP (salah kelas)
+188   | k02_285_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9728 | TP
+189   | k02_300_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9721 | TP
+190   | k02_315_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9718 | TP
+191   | k02_330_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9736 | TP
+192   | k02_345_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9762 | TP
+193   | k03_0_t.jpg                              | Terang   | Kaleng         | Kaleng         | 0.9692 | TP
+194   | k03_15_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9694 | TP
+195   | k03_30_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9617 | TP
+196   | k03_45_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9615 | TP
+197   | k03_60_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9765 | TP
+198   | k03_75_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9542 | TP
+199   | k03_90_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9860 | TP
+200   | k03_105_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9782 | TP
+201   | k03_120_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9661 | TP
+202   | k03_135_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9727 | TP
+203   | k03_150_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9717 | TP
+204   | k03_165_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9681 | TP
+205   | k03_180_t.jpg                            | Terang   | Kaleng         | Botol Plastik  | 0.9673 | FN+FP (salah kelas)
+206   | k03_195_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9618 | TP
+207   | k03_210_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9685 | TP
+208   | k03_225_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9680 | TP
+209   | k03_240_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9829 | TP
+210   | k03_255_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9713 | TP
+211   | k03_270_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9851 | TP
+212   | k03_285_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9648 | TP
+213   | k03_300_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9726 | TP
+214   | k03_315_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9682 | TP
+215   | k03_330_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9695 | TP
+216   | k03_345_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9614 | TP
+
+--- KELOMPOK PENCAHAYAAN: REDUP ---
+1     | bb01_0_r.jpg                             | Redup    | Botol Beling   | Botol Beling   | 0.9587 | TP
+2     | bb01_15_r.jpg                            | Redup    | Botol Beling   | Botol Beling   | 0.9648 | TP
+3     | bb01_30_r.jpg                            | Redup    | Botol Beling   | Botol Beling   | 0.9747 | TP
+4     | bb01_45_r.jpg                            | Redup    | Botol Beling   | Botol Beling   | 0.9664 | TP
+5     | bb01_60_r.jpg                            | Redup    | Botol Beling   | Botol Beling   | 0.9749 | TP
+6     | bb01_75_r.jpg                            | Redup    | Botol Beling   | Botol Beling   | 0.9678 | TP
+7     | bb01_90_r.jpg                            | Redup    | Botol Beling   | Botol Beling   | 0.9780 | TP
+8     | bb01_105_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9689 | TP
+9     | bb01_120_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9789 | TP
+10    | bb01_135_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9652 | TP
+11    | bb01_150_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9510 | TP
+12    | bb01_165_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9562 | TP
+13    | bb01_180_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9559 | TP
+14    | bb01_195_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9745 | TP
+15    | bb01_210_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9554 | TP
+16    | bb01_225_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9486 | TP
+17    | bb01_240_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9859 | TP
+18    | bb01_255_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9609 | TP
+19    | bb01_270_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9618 | TP
+20    | bb01_285_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9742 | TP
+21    | bb01_300_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9671 | TP
+22    | bb01_315_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9643 | TP
+23    | bb01_330_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9683 | TP
+24    | bb01_345_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9548 | TP
+25    | bb02_0_r.jpg                             | Redup    | Botol Beling   | Kaleng         | 0.9769 | FN+FP (salah kelas)
+26    | bb02_15_r.jpg                            | Redup    | Botol Beling   | Kaleng         | 0.9757 | FN+FP (salah kelas)
+27    | bb02_30_r.jpg                            | Redup    | Botol Beling   | Kaleng         | 0.9305 | FN+FP (salah kelas)
+28    | bb02_45_r.jpg                            | Redup    | Botol Beling   | Kaleng         | 0.9619 | FN+FP (salah kelas)
+29    | bb02_60_r.jpg                            | Redup    | Botol Beling   | Kaleng         | 0.9695 | FN+FP (salah kelas)
+30    | bb02_75_r.jpg                            | Redup    | Botol Beling   | Kaleng         | 0.9774 | FN+FP (salah kelas)
+31    | bb02_90_r.jpg                            | Redup    | Botol Beling   | Kaleng         | 0.9679 | FN+FP (salah kelas)
+32    | bb02_105_r.jpg                           | Redup    | Botol Beling   | Kaleng         | 0.9697 | FN+FP (salah kelas)
+33    | bb02_120_r.jpg                           | Redup    | Botol Beling   | Kaleng         | 0.9737 | FN+FP (salah kelas)
+34    | bb02_135_r.jpg                           | Redup    | Botol Beling   | Kaleng         | 0.9523 | FN+FP (salah kelas)
+35    | bb02_150_r.jpg                           | Redup    | Botol Beling   | Kaleng         | 0.9667 | FN+FP (salah kelas)
+36    | bb02_165_r.jpg                           | Redup    | Botol Beling   | Kaleng         | 0.9289 | FN+FP (salah kelas)
+37    | bb02_180_r.jpg                           | Redup    | Botol Beling   | Kaleng         | 0.9548 | FN+FP (salah kelas)
+38    | bb02_195_r.jpg                           | Redup    | Botol Beling   | Kaleng         | 0.8688 | FN+FP (salah kelas)
+39    | bb02_210_r.jpg                           | Redup    | Botol Beling   | Kaleng         | 0.9124 | FN+FP (salah kelas)
+40    | bb02_225_r.jpg                           | Redup    | Botol Beling   | Kaleng         | 0.9658 | FN+FP (salah kelas)
+41    | bb02_240_r.jpg                           | Redup    | Botol Beling   | Kaleng         | 0.9783 | FN+FP (salah kelas)
+42    | bb02_255_r.jpg                           | Redup    | Botol Beling   | Kaleng         | 0.9679 | FN+FP (salah kelas)
+43    | bb02_270_r.jpg                           | Redup    | Botol Beling   | Kaleng         | 0.9617 | FN+FP (salah kelas)
+44    | bb02_285_r.jpg                           | Redup    | Botol Beling   | Kaleng         | 0.9622 | FN+FP (salah kelas)
+45    | bb02_300_r.jpg                           | Redup    | Botol Beling   | Kaleng         | 0.9546 | FN+FP (salah kelas)
+46    | bb02_315_r.jpg                           | Redup    | Botol Beling   | Kaleng         | 0.9564 | FN+FP (salah kelas)
+47    | bb02_330_r.jpg                           | Redup    | Botol Beling   | Kaleng         | 0.9725 | FN+FP (salah kelas)
+48    | bb02_345_r.jpg                           | Redup    | Botol Beling   | Kaleng         | 0.9252 | FN+FP (salah kelas)
+49    | bb03_0_r.jpg                             | Redup    | Botol Beling   | Botol Beling   | 0.9724 | TP
+50    | bb03_15_r.jpg                            | Redup    | Botol Beling   | Botol Beling   | 0.9727 | TP
+51    | bb03_30_r.jpg                            | Redup    | Botol Beling   | Botol Beling   | 0.9679 | TP
+52    | bb03_45_r.jpg                            | Redup    | Botol Beling   | Botol Beling   | 0.9500 | TP
+53    | bb03_60_r.jpg                            | Redup    | Botol Beling   | Botol Beling   | 0.9482 | TP
+54    | bb03_75_r.jpg                            | Redup    | Botol Beling   | Botol Beling   | 0.9627 | TP
+55    | bb03_90_r.jpg                            | Redup    | Botol Beling   | Botol Beling   | 0.9587 | TP
+56    | bb03_105_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9522 | TP
+57    | bb03_120_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9699 | TP
+58    | bb03_135_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9692 | TP
+59    | bb03_150_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9791 | TP
+60    | bb03_165_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9576 | TP
+61    | bb03_180_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9658 | TP
+62    | bb03_195_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9647 | TP
+63    | bb03_210_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9721 | TP
+64    | bb03_225_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9682 | TP
+65    | bb03_240_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9694 | TP
+66    | bb03_255_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9582 | TP
+67    | bb03_270_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9485 | TP
+68    | bb03_285_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9516 | TP
+69    | bb03_300_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9694 | TP
+70    | bb03_315_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9594 | TP
+71    | bb03_330_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9780 | TP
+72    | bb03_345_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9676 | TP
+73    | bp01_0_r.jpg                             | Redup    | Botol Plastik  | Kaleng         | 0.9061 | FN+FP (salah kelas)
+74    | bp01_15_r.jpg                            | Redup    | Botol Plastik  | Kaleng         | 0.9804 | FN+FP (salah kelas)
+75    | bp01_30_r.jpg                            | Redup    | Botol Plastik  | Kaleng         | 0.9894 | FN+FP (salah kelas)
+76    | bp01_45_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.9552 | FN+FP (salah kelas)
+77    | bp01_60_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.9681 | FN+FP (salah kelas)
+78    | bp01_75_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.9492 | FN+FP (salah kelas)
+79    | bp01_90_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.9557 | FN+FP (salah kelas)
+80    | bp01_105_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9765 | FN+FP (salah kelas)
+81    | bp01_120_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9765 | FN+FP (salah kelas)
+82    | bp01_135_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9692 | FN+FP (salah kelas)
+83    | bp01_150_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9653 | FN+FP (salah kelas)
+84    | bp01_165_r.jpg                           | Redup    | Botol Plastik  | Kaleng         | 0.9274 | FN+FP (salah kelas)
+85    | bp01_180_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9461 | FN+FP (salah kelas)
+86    | bp01_195_r.jpg                           | Redup    | Botol Plastik  | Kaleng         | 0.9608 | FN+FP (salah kelas)
+87    | bp01_210_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9432 | FN+FP (salah kelas)
+88    | bp01_225_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9641 | FN+FP (salah kelas)
+89    | bp01_240_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9482 | FN+FP (salah kelas)
+90    | bp01_255_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9642 | FN+FP (salah kelas)
+91    | bp01_270_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9464 | FN+FP (salah kelas)
+92    | bp01_285_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9520 | FN+FP (salah kelas)
+93    | bp01_300_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9658 | FN+FP (salah kelas)
+94    | bp01_315_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9562 | FN+FP (salah kelas)
+95    | bp01_330_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9556 | FN+FP (salah kelas)
+96    | bp01_345_r.jpg                           | Redup    | Botol Plastik  | Kaleng         | 0.9616 | FN+FP (salah kelas)
+97    | bp02_0_r.jpg                             | Redup    | Botol Plastik  | Botol Beling   | 0.8694 | FN+FP (salah kelas)
+98    | bp02_15_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.9660 | FN+FP (salah kelas)
+99    | bp02_30_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.9829 | FN+FP (salah kelas)
+100   | bp02_45_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.9730 | FN+FP (salah kelas)
+101   | bp02_60_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.9496 | FN+FP (salah kelas)
+102   | bp02_75_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.2467 | FN+FP (salah kelas)
+103   | bp02_90_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.9673 | FN+FP (salah kelas)
+104   | bp02_105_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9684 | FN+FP (salah kelas)
+105   | bp02_120_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9667 | FN+FP (salah kelas)
+106   | bp02_135_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9535 | FN+FP (salah kelas)
+107   | bp02_150_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9573 | FN+FP (salah kelas)
+108   | bp02_165_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9253 | FN+FP (salah kelas)
+109   | bp02_180_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.6654 | FN+FP (salah kelas)
+110   | bp02_195_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9508 | FN+FP (salah kelas)
+111   | bp02_210_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9483 | FN+FP (salah kelas)
+112   | bp02_225_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9647 | FN+FP (salah kelas)
+113   | bp02_240_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9509 | FN+FP (salah kelas)
+114   | bp02_255_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9510 | FN+FP (salah kelas)
+115   | bp02_270_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9740 | FN+FP (salah kelas)
+116   | bp02_285_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9011 | FN+FP (salah kelas)
+117   | bp02_300_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9682 | FN+FP (salah kelas)
+118   | bp02_315_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9719 | FN+FP (salah kelas)
+119   | bp02_330_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9743 | FN+FP (salah kelas)
+120   | bp02_345_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9077 | FN+FP (salah kelas)
+121   | bp03_0_r.jpg                             | Redup    | Botol Plastik  | Botol Beling   | 0.9504 | FN+FP (salah kelas)
+122   | bp03_15_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.9543 | FN+FP (salah kelas)
+123   | bp03_30_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.9840 | FN+FP (salah kelas)
+124   | bp03_45_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.9784 | FN+FP (salah kelas)
+125   | bp03_60_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.9676 | FN+FP (salah kelas)
+126   | bp03_75_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.8316 | FN+FP (salah kelas)
+127   | bp03_90_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.9610 | FN+FP (salah kelas)
+128   | bp03_105_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9830 | FN+FP (salah kelas)
+129   | bp03_120_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9540 | FN+FP (salah kelas)
+130   | bp03_135_r.jpg                           | Redup    | Botol Plastik  | Kaleng         | 0.9468 | FN+FP (salah kelas)
+131   | bp03_150_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9640 | FN+FP (salah kelas)
+132   | bp03_165_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9659 | FN+FP (salah kelas)
+133   | bp03_180_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+134   | bp03_195_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9389 | FN+FP (salah kelas)
+135   | bp03_210_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9865 | FN+FP (salah kelas)
+136   | bp03_225_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9816 | FN+FP (salah kelas)
+137   | bp03_240_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9882 | FN+FP (salah kelas)
+138   | bp03_255_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9773 | FN+FP (salah kelas)
+139   | bp03_270_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9287 | FN+FP (salah kelas)
+140   | bp03_285_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9804 | FN+FP (salah kelas)
+141   | bp03_300_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9820 | FN+FP (salah kelas)
+142   | bp03_315_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9682 | FN+FP (salah kelas)
+143   | bp03_330_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9553 | FN+FP (salah kelas)
+144   | bp03_345_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9344 | FN+FP (salah kelas)
+145   | k01_0_r.jpg                              | Redup    | Kaleng         | Kaleng         | 0.9644 | TP
+146   | k01_15_r.jpg                             | Redup    | Kaleng         | Kaleng         | 0.9704 | TP
+147   | k01_30_r.jpg                             | Redup    | Kaleng         | Kaleng         | 0.9644 | TP
+148   | k01_45_r.jpg                             | Redup    | Kaleng         | Kaleng         | 0.9643 | TP
+149   | k01_60_r.jpg                             | Redup    | Kaleng         | Kaleng         | 0.9646 | TP
+150   | k01_75_r.jpg                             | Redup    | Kaleng         | Kaleng         | 0.9526 | TP
+151   | k01_90_r.jpg                             | Redup    | Kaleng         | Kaleng         | 0.9850 | TP
+152   | k01_105_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9663 | TP
+153   | k01_120_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9730 | TP
+154   | k01_135_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9630 | TP
+155   | k01_150_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9731 | TP
+156   | k01_165_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9683 | TP
+157   | k01_180_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9836 | TP
+158   | k01_195_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9729 | TP
+159   | k01_210_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9651 | TP
+160   | k01_225_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9732 | TP
+161   | k01_240_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9546 | TP
+162   | k01_255_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9604 | TP
+163   | k01_270_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9761 | TP
+164   | k01_285_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9618 | TP
+165   | k01_300_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9501 | TP
+166   | k01_315_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9735 | TP
+167   | k01_330_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9524 | TP
+168   | k01_345_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9666 | TP
+169   | k02_0_r.jpg                              | Redup    | Kaleng         | Kaleng         | 0.9582 | TP
+170   | k02_15_r.jpg                             | Redup    | Kaleng         | Kaleng         | 0.9572 | TP
+171   | k02_30_r.jpg                             | Redup    | Kaleng         | Kaleng         | 0.9441 | TP
+172   | k02_45_r.jpg                             | Redup    | Kaleng         | Kaleng         | 0.9525 | TP
+173   | k02_60_r.jpg                             | Redup    | Kaleng         | Kaleng         | 0.9689 | TP
+174   | k02_75_r.jpg                             | Redup    | Kaleng         | Kaleng         | 0.9683 | TP
+175   | k02_90_r.jpg                             | Redup    | Kaleng         | Kaleng         | 0.9696 | TP
+176   | k02_105_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9627 | TP
+177   | k02_120_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9622 | TP
+178   | k02_135_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9609 | TP
+179   | k02_150_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9546 | TP
+180   | k02_165_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9624 | TP
+181   | k02_180_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9396 | TP
+182   | k02_195_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9451 | TP
+183   | k02_210_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9723 | TP
+184   | k02_225_r.jpg                            | Redup    | Kaleng         | -              | 0.0000 | FN (tidak terdeteksi)
+185   | k02_240_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9614 | TP
+186   | k02_255_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9357 | TP
+187   | k02_270_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9795 | TP
+188   | k02_285_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.9512 | FN+FP (salah kelas)
+189   | k02_300_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9713 | TP
+190   | k02_315_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9481 | TP
+191   | k02_330_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9509 | TP
+192   | k02_345_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9643 | TP
+193   | k03_0_r.jpg                              | Redup    | Kaleng         | Kaleng         | 0.9544 | TP
+194   | k03_15_r.jpg                             | Redup    | Kaleng         | Kaleng         | 0.9524 | TP
+195   | k03_30_r.jpg                             | Redup    | Kaleng         | Kaleng         | 0.9653 | TP
+196   | k03_45_r.jpg                             | Redup    | Kaleng         | Kaleng         | 0.9700 | TP
+197   | k03_60_r.jpg                             | Redup    | Kaleng         | Kaleng         | 0.9651 | TP
+198   | k03_75_r.jpg                             | Redup    | Kaleng         | Kaleng         | 0.9652 | TP
+199   | k03_90_r.jpg                             | Redup    | Kaleng         | -              | 0.0000 | FN (tidak terdeteksi)
+200   | k03_105_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9588 | TP
+201   | k03_120_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9804 | TP
+202   | k03_135_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9678 | TP
+203   | k03_150_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9546 | TP
+204   | k03_165_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9513 | TP
+205   | k03_180_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9382 | TP
+206   | k03_195_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9686 | TP
+207   | k03_210_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9611 | TP
+208   | k03_225_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9498 | TP
+209   | k03_240_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9724 | TP
+210   | k03_255_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9579 | TP
+211   | k03_270_r.jpg                            | Redup    | Kaleng         | -              | 0.0000 | FN (tidak terdeteksi)
+212   | k03_285_r.jpg                            | Redup    | Kaleng         | -              | 0.0000 | FN (tidak terdeteksi)
+213   | k03_300_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9713 | TP
+214   | k03_315_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9560 | TP
+215   | k03_330_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9555 | TP
+216   | k03_345_r.jpg                            | Redup    | Kaleng         | Kaleng         | 0.9664 | TP
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+==========================================================================================================================================================================
+ EVALUATION LOG - Skenario A - MODEL YOLO26n
+ Generated at: 2026-11-20 18:45:56 | IoU>=0.5 | Conf>=0.25 | Total gambar: 648
+==========================================================================================================================================================================
+
+[ METRIK DETEKSI DAN KLASIFIKASI PER KELAS (ONE-vs-REST) ]
+            Skenario/Kelas  TP   TN  FP  FN  Precision  Recall  F1-Score  Accuracy  Mean IoU  mAP@0.5
+ Skenario A - Botol Beling 123  337  95  93     0.5642  0.5694    0.5668    0.7099    0.9294   0.5577
+Skenario A - Botol Plastik  85  374  58 131     0.5944  0.3935    0.4735    0.7083    0.9566   0.3654
+       Skenario A - Kaleng 108  345  87 108     0.5538  0.5000    0.5255    0.6991    0.9821   0.4350
+        Skenario A - TOTAL 316 1056 240 332     0.5683  0.4877    0.5249    0.7058    0.9547   0.4527
+
+[ RINCIAN PERFORMA BERDASARKAN KONDISI PENCAHAYAAN ]
+Cahaya  Jumlah Gambar  TP   TN  FP  FN  Precision  Recall  F1-Score  Accuracy  Mean IoU  mAP@0.5
+Sedang            216 178  394  38  38     0.8241  0.8241    0.8241    0.8827    0.9703   0.8314
+Terang            216  81  344  88 135     0.4793  0.3750    0.4208    0.6559    0.9156   0.2709
+ Redup            216  57  318 114 159     0.3333  0.2639    0.2946    0.5787    0.9619   0.2502
+ TOTAL            648 316 1056 240 332     0.5683  0.4877    0.5249    0.7058    0.9547   0.4527
+
+[ CONFUSION MATRIX EVALUASI DETEKSI (Aktual vs Prediksi) ]
+Aktual / Prediksi  Botol Beling  Botol Plastik  Kaleng  Tidak Terdeteksi
+     Botol Beling           123             15      73                 5
+    Botol Plastik            36             85      14                81
+           Kaleng            59             43     108                 6
+
+[ DETAIL PER GAMBAR ]
+No    | Image Name                               | Lighting | Aktual         | Prediksi       | IoU    | Status
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--- KELOMPOK PENCAHAYAAN: SEDANG ---
+1     | bb01_0_s.jpg                             | Sedang   | Botol Beling   | Botol Beling   | 0.9653 | TP
+2     | bb01_15_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9675 | TP
+3     | bb01_30_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9888 | TP
+4     | bb01_45_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9884 | TP
+5     | bb01_60_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9788 | TP
+6     | bb01_75_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9869 | TP
+7     | bb01_90_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9489 | TP
+8     | bb01_105_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9643 | TP
+9     | bb01_120_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9951 | TP
+10    | bb01_135_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9856 | TP
+11    | bb01_150_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9833 | TP
+12    | bb01_165_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9789 | TP
+13    | bb01_180_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9638 | TP
+14    | bb01_195_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9701 | TP
+15    | bb01_210_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9733 | TP
+16    | bb01_225_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9914 | TP
+17    | bb01_240_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9742 | TP
+18    | bb01_255_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9857 | TP
+19    | bb01_270_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9533 | TP
+20    | bb01_285_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9890 | TP
+21    | bb01_300_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9686 | TP
+22    | bb01_315_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9857 | TP
+23    | bb01_330_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9787 | TP
+24    | bb01_345_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9867 | TP
+25    | bb02_0_s.jpg                             | Sedang   | Botol Beling   | Kaleng         | 0.9852 | FN+FP (salah kelas)
+26    | bb02_15_s.jpg                            | Sedang   | Botol Beling   | Kaleng         | 0.9814 | FN+FP (salah kelas)
+27    | bb02_30_s.jpg                            | Sedang   | Botol Beling   | Kaleng         | 0.9721 | FN+FP (salah kelas)
+28    | bb02_45_s.jpg                            | Sedang   | Botol Beling   | Kaleng         | 0.9697 | FN+FP (salah kelas)
+29    | bb02_60_s.jpg                            | Sedang   | Botol Beling   | Kaleng         | 0.9885 | FN+FP (salah kelas)
+30    | bb02_75_s.jpg                            | Sedang   | Botol Beling   | Kaleng         | 0.9820 | FN+FP (salah kelas)
+31    | bb02_90_s.jpg                            | Sedang   | Botol Beling   | Kaleng         | 0.9698 | FN+FP (salah kelas)
+32    | bb02_105_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9874 | FN+FP (salah kelas)
+33    | bb02_120_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9875 | FN+FP (salah kelas)
+34    | bb02_135_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9844 | FN+FP (salah kelas)
+35    | bb02_150_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9905 | FN+FP (salah kelas)
+36    | bb02_165_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9732 | FN+FP (salah kelas)
+37    | bb02_180_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9538 | FN+FP (salah kelas)
+38    | bb02_195_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9737 | FN+FP (salah kelas)
+39    | bb02_210_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9829 | FN+FP (salah kelas)
+40    | bb02_225_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9871 | FN+FP (salah kelas)
+41    | bb02_240_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9832 | FN+FP (salah kelas)
+42    | bb02_255_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9942 | FN+FP (salah kelas)
+43    | bb02_270_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9819 | FN+FP (salah kelas)
+44    | bb02_285_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9852 | FN+FP (salah kelas)
+45    | bb02_300_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9893 | FN+FP (salah kelas)
+46    | bb02_315_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9856 | FN+FP (salah kelas)
+47    | bb02_330_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9736 | FN+FP (salah kelas)
+48    | bb02_345_s.jpg                           | Sedang   | Botol Beling   | Kaleng         | 0.9759 | FN+FP (salah kelas)
+49    | bb03_0_s.jpg                             | Sedang   | Botol Beling   | Botol Beling   | 0.9735 | TP
+50    | bb03_15_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9518 | TP
+51    | bb03_30_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9750 | TP
+52    | bb03_45_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9877 | TP
+53    | bb03_60_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9859 | TP
+54    | bb03_75_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9841 | TP
+55    | bb03_90_s.jpg                            | Sedang   | Botol Beling   | Botol Beling   | 0.9679 | TP
+56    | bb03_105_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9860 | TP
+57    | bb03_120_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9803 | TP
+58    | bb03_135_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9715 | TP
+59    | bb03_150_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9878 | TP
+60    | bb03_165_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9737 | TP
+61    | bb03_180_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.8611 | TP
+62    | bb03_195_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9868 | TP
+63    | bb03_210_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9790 | TP
+64    | bb03_225_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9886 | TP
+65    | bb03_240_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9811 | TP
+66    | bb03_255_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9595 | TP
+67    | bb03_270_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9756 | TP
+68    | bb03_285_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9735 | TP
+69    | bb03_300_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9868 | TP
+70    | bb03_315_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9873 | TP
+71    | bb03_330_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9779 | TP
+72    | bb03_345_s.jpg                           | Sedang   | Botol Beling   | Botol Beling   | 0.9323 | TP
+73    | bp01_0_s.jpg                             | Sedang   | Botol Plastik  | Botol Plastik  | 0.9379 | TP
+74    | bp01_15_s.jpg                            | Sedang   | Botol Plastik  | Botol Plastik  | 0.9777 | TP
+75    | bp01_30_s.jpg                            | Sedang   | Botol Plastik  | Botol Plastik  | 0.7955 | TP
+76    | bp01_45_s.jpg                            | Sedang   | Botol Plastik  | Botol Plastik  | 0.9437 | TP
+77    | bp01_60_s.jpg                            | Sedang   | Botol Plastik  | Botol Plastik  | 0.9752 | TP
+78    | bp01_75_s.jpg                            | Sedang   | Botol Plastik  | Botol Plastik  | 0.9553 | TP
+79    | bp01_90_s.jpg                            | Sedang   | Botol Plastik  | Botol Plastik  | 0.6747 | TP
+80    | bp01_105_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9587 | TP
+81    | bp01_120_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9891 | TP
+82    | bp01_135_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9698 | TP
+83    | bp01_150_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9548 | TP
+84    | bp01_165_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9180 | TP
+85    | bp01_180_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9698 | TP
+86    | bp01_195_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9659 | TP
+87    | bp01_210_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9812 | TP
+88    | bp01_225_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9937 | TP
+89    | bp01_240_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9746 | TP
+90    | bp01_255_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9881 | TP
+91    | bp01_270_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.6972 | TP
+92    | bp01_285_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.8527 | TP
+93    | bp01_300_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.8378 | TP
+94    | bp01_315_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.7859 | TP
+95    | bp01_330_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.8394 | TP
+96    | bp01_345_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9709 | TP
+97    | bp02_0_s.jpg                             | Sedang   | Botol Plastik  | Botol Plastik  | 0.9645 | TP
+98    | bp02_15_s.jpg                            | Sedang   | Botol Plastik  | Botol Plastik  | 0.9776 | TP
+99    | bp02_30_s.jpg                            | Sedang   | Botol Plastik  | Botol Plastik  | 0.9885 | TP
+100   | bp02_45_s.jpg                            | Sedang   | Botol Plastik  | Botol Plastik  | 0.9918 | TP
+101   | bp02_60_s.jpg                            | Sedang   | Botol Plastik  | Botol Plastik  | 0.9889 | TP
+102   | bp02_75_s.jpg                            | Sedang   | Botol Plastik  | Botol Beling   | 0.9688 | FN+FP (salah kelas)
+103   | bp02_90_s.jpg                            | Sedang   | Botol Plastik  | Botol Plastik  | 0.9548 | TP
+104   | bp02_105_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9953 | TP
+105   | bp02_120_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9920 | TP
+106   | bp02_135_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9869 | TP
+107   | bp02_150_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9855 | TP
+108   | bp02_165_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9870 | TP
+109   | bp02_180_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9868 | TP
+110   | bp02_195_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9962 | TP
+111   | bp02_210_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9855 | TP
+112   | bp02_225_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9888 | TP
+113   | bp02_240_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9588 | TP
+114   | bp02_255_s.jpg                           | Sedang   | Botol Plastik  | Botol Beling   | 0.9640 | FN+FP (salah kelas)
+115   | bp02_270_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9598 | TP
+116   | bp02_285_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9842 | TP
+117   | bp02_300_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9898 | TP
+118   | bp02_315_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9764 | TP
+119   | bp02_330_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9870 | TP
+120   | bp02_345_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9308 | TP
+121   | bp03_0_s.jpg                             | Sedang   | Botol Plastik  | Kaleng         | 0.9529 | FN+FP (salah kelas)
+122   | bp03_15_s.jpg                            | Sedang   | Botol Plastik  | Kaleng         | 0.9679 | FN+FP (salah kelas)
+123   | bp03_30_s.jpg                            | Sedang   | Botol Plastik  | Botol Plastik  | 0.9827 | TP
+124   | bp03_45_s.jpg                            | Sedang   | Botol Plastik  | Kaleng         | 0.9911 | FN+FP (salah kelas)
+125   | bp03_60_s.jpg                            | Sedang   | Botol Plastik  | Kaleng         | 0.9559 | FN+FP (salah kelas)
+126   | bp03_75_s.jpg                            | Sedang   | Botol Plastik  | Kaleng         | 0.9436 | FN+FP (salah kelas)
+127   | bp03_90_s.jpg                            | Sedang   | Botol Plastik  | Kaleng         | 0.9600 | FN+FP (salah kelas)
+128   | bp03_105_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9830 | TP
+129   | bp03_120_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9766 | TP
+130   | bp03_135_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9801 | TP
+131   | bp03_150_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9802 | TP
+132   | bp03_165_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9671 | FN+FP (salah kelas)
+133   | bp03_180_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9476 | FN+FP (salah kelas)
+134   | bp03_195_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9814 | FN+FP (salah kelas)
+135   | bp03_210_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9694 | FN+FP (salah kelas)
+136   | bp03_225_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9851 | TP
+137   | bp03_240_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9797 | FN+FP (salah kelas)
+138   | bp03_255_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9086 | TP
+139   | bp03_270_s.jpg                           | Sedang   | Botol Plastik  | Kaleng         | 0.9625 | FN+FP (salah kelas)
+140   | bp03_285_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9731 | TP
+141   | bp03_300_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9885 | TP
+142   | bp03_315_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9893 | TP
+143   | bp03_330_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9601 | TP
+144   | bp03_345_s.jpg                           | Sedang   | Botol Plastik  | Botol Plastik  | 0.9402 | TP
+145   | k01_0_s.jpg                              | Sedang   | Kaleng         | Kaleng         | 0.9708 | TP
+146   | k01_15_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9838 | TP
+147   | k01_30_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9769 | TP
+148   | k01_45_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9781 | TP
+149   | k01_60_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9910 | TP
+150   | k01_75_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9872 | TP
+151   | k01_90_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9847 | TP
+152   | k01_105_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9799 | TP
+153   | k01_120_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9866 | TP
+154   | k01_135_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9848 | TP
+155   | k01_150_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9831 | TP
+156   | k01_165_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9944 | TP
+157   | k01_180_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9896 | TP
+158   | k01_195_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9844 | TP
+159   | k01_210_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9878 | TP
+160   | k01_225_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9872 | TP
+161   | k01_240_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9827 | TP
+162   | k01_255_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9917 | TP
+163   | k01_270_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9936 | TP
+164   | k01_285_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9880 | TP
+165   | k01_300_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9833 | TP
+166   | k01_315_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9875 | TP
+167   | k01_330_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9800 | TP
+168   | k01_345_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9886 | TP
+169   | k02_0_s.jpg                              | Sedang   | Kaleng         | Kaleng         | 0.9831 | TP
+170   | k02_15_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9928 | TP
+171   | k02_30_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9803 | TP
+172   | k02_45_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9894 | TP
+173   | k02_60_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9901 | TP
+174   | k02_75_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9905 | TP
+175   | k02_90_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9757 | TP
+176   | k02_105_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9862 | TP
+177   | k02_120_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9833 | TP
+178   | k02_135_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9819 | TP
+179   | k02_150_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9873 | TP
+180   | k02_165_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9884 | TP
+181   | k02_180_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9576 | TP
+182   | k02_195_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9888 | TP
+183   | k02_210_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9882 | TP
+184   | k02_225_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9677 | TP
+185   | k02_240_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9924 | TP
+186   | k02_255_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9681 | TP
+187   | k02_270_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9712 | TP
+188   | k02_285_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9741 | TP
+189   | k02_300_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9869 | TP
+190   | k02_315_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9833 | TP
+191   | k02_330_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9891 | TP
+192   | k02_345_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9687 | TP
+193   | k03_0_s.jpg                              | Sedang   | Kaleng         | Kaleng         | 0.9833 | TP
+194   | k03_15_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9813 | TP
+195   | k03_30_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9877 | TP
+196   | k03_45_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9887 | TP
+197   | k03_60_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9842 | TP
+198   | k03_75_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9828 | TP
+199   | k03_90_s.jpg                             | Sedang   | Kaleng         | Kaleng         | 0.9804 | TP
+200   | k03_105_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9696 | TP
+201   | k03_120_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9911 | TP
+202   | k03_135_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9893 | TP
+203   | k03_150_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9859 | TP
+204   | k03_165_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9770 | TP
+205   | k03_180_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9773 | TP
+206   | k03_195_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9851 | TP
+207   | k03_210_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9888 | TP
+208   | k03_225_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9878 | TP
+209   | k03_240_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9905 | TP
+210   | k03_255_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9875 | TP
+211   | k03_270_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9838 | TP
+212   | k03_285_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9844 | TP
+213   | k03_300_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9806 | TP
+214   | k03_315_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9868 | TP
+215   | k03_330_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9871 | TP
+216   | k03_345_s.jpg                            | Sedang   | Kaleng         | Kaleng         | 0.9772 | TP
+
+--- KELOMPOK PENCAHAYAAN: TERANG ---
+1     | bb01_0_t.jpg                             | Terang   | Botol Beling   | Botol Beling   | 0.5306 | TP
+2     | bb01_15_t.jpg                            | Terang   | Botol Beling   | Botol Beling   | 0.6686 | TP
+3     | bb01_30_t.jpg                            | Terang   | Botol Beling   | Botol Beling   | 0.7557 | TP
+4     | bb01_45_t.jpg                            | Terang   | Botol Beling   | Botol Beling   | 0.9610 | TP
+5     | bb01_60_t.jpg                            | Terang   | Botol Beling   | Botol Beling   | 0.9253 | TP
+6     | bb01_75_t.jpg                            | Terang   | Botol Beling   | Botol Beling   | 0.1691 | FN (IoU rendah)
+7     | bb01_90_t.jpg                            | Terang   | Botol Beling   | Botol Beling   | 0.7660 | TP
+8     | bb01_105_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.8532 | TP
+9     | bb01_120_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.9955 | TP
+10    | bb01_135_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.9636 | TP
+11    | bb01_150_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.6979 | TP
+12    | bb01_165_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.8126 | TP
+13    | bb01_180_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.7295 | TP
+14    | bb01_195_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.7653 | TP
+15    | bb01_210_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.7440 | TP
+16    | bb01_225_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.9197 | TP
+17    | bb01_240_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.9374 | TP
+18    | bb01_255_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.9338 | TP
+19    | bb01_270_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.5498 | TP
+20    | bb01_285_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.6140 | TP
+21    | bb01_300_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.6077 | TP
+22    | bb01_315_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.6293 | TP
+23    | bb01_330_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.6391 | TP
+24    | bb01_345_t.jpg                           | Terang   | Botol Beling   | Botol Beling   | 0.5969 | TP
+25    | bb02_0_t.jpg                             | Terang   | Botol Beling   | Kaleng         | 0.9803 | FN+FP (salah kelas)
+26    | bb02_15_t.jpg                            | Terang   | Botol Beling   | Kaleng         | 0.9837 | FN+FP (salah kelas)
+27    | bb02_30_t.jpg                            | Terang   | Botol Beling   | Kaleng         | 0.9796 | FN+FP (salah kelas)
+28    | bb02_45_t.jpg                            | Terang   | Botol Beling   | Kaleng         | 0.9747 | FN+FP (salah kelas)
+29    | bb02_60_t.jpg                            | Terang   | Botol Beling   | Kaleng         | 0.9917 | FN+FP (salah kelas)
+30    | bb02_75_t.jpg                            | Terang   | Botol Beling   | Kaleng         | 0.9896 | FN+FP (salah kelas)
+31    | bb02_90_t.jpg                            | Terang   | Botol Beling   | Kaleng         | 0.9848 | FN+FP (salah kelas)
+32    | bb02_105_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9904 | FN+FP (salah kelas)
+33    | bb02_120_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9803 | FN+FP (salah kelas)
+34    | bb02_135_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9745 | FN+FP (salah kelas)
+35    | bb02_150_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9891 | FN+FP (salah kelas)
+36    | bb02_165_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9521 | FN+FP (salah kelas)
+37    | bb02_180_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9753 | FN+FP (salah kelas)
+38    | bb02_195_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9842 | FN+FP (salah kelas)
+39    | bb02_210_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9909 | FN+FP (salah kelas)
+40    | bb02_225_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9823 | FN+FP (salah kelas)
+41    | bb02_240_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9784 | FN+FP (salah kelas)
+42    | bb02_255_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9810 | FN+FP (salah kelas)
+43    | bb02_270_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9850 | FN+FP (salah kelas)
+44    | bb02_285_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9691 | FN+FP (salah kelas)
+45    | bb02_300_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9896 | FN+FP (salah kelas)
+46    | bb02_315_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9178 | FN+FP (salah kelas)
+47    | bb02_330_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9348 | FN+FP (salah kelas)
+48    | bb02_345_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9360 | FN+FP (salah kelas)
+49    | bb03_0_t.jpg                             | Terang   | Botol Beling   | Kaleng         | 0.9425 | FN+FP (salah kelas)
+50    | bb03_15_t.jpg                            | Terang   | Botol Beling   | Kaleng         | 0.9585 | FN+FP (salah kelas)
+51    | bb03_30_t.jpg                            | Terang   | Botol Beling   | Kaleng         | 0.9892 | FN+FP (salah kelas)
+52    | bb03_45_t.jpg                            | Terang   | Botol Beling   | Kaleng         | 0.9781 | FN+FP (salah kelas)
+53    | bb03_60_t.jpg                            | Terang   | Botol Beling   | Kaleng         | 0.9883 | FN+FP (salah kelas)
+54    | bb03_75_t.jpg                            | Terang   | Botol Beling   | Botol Beling   | 0.9555 | TP
+55    | bb03_90_t.jpg                            | Terang   | Botol Beling   | Kaleng         | 0.9821 | FN+FP (salah kelas)
+56    | bb03_105_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9780 | FN+FP (salah kelas)
+57    | bb03_120_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9810 | FN+FP (salah kelas)
+58    | bb03_135_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9888 | FN+FP (salah kelas)
+59    | bb03_150_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9919 | FN+FP (salah kelas)
+60    | bb03_165_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9914 | FN+FP (salah kelas)
+61    | bb03_180_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9576 | FN+FP (salah kelas)
+62    | bb03_195_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9619 | FN+FP (salah kelas)
+63    | bb03_210_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9796 | FN+FP (salah kelas)
+64    | bb03_225_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9827 | FN+FP (salah kelas)
+65    | bb03_240_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9895 | FN+FP (salah kelas)
+66    | bb03_255_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9771 | FN+FP (salah kelas)
+67    | bb03_270_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9288 | FN+FP (salah kelas)
+68    | bb03_285_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9417 | FN+FP (salah kelas)
+69    | bb03_300_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9832 | FN+FP (salah kelas)
+70    | bb03_315_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9889 | FN+FP (salah kelas)
+71    | bb03_330_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9385 | FN+FP (salah kelas)
+72    | bb03_345_t.jpg                           | Terang   | Botol Beling   | Kaleng         | 0.9586 | FN+FP (salah kelas)
+73    | bp01_0_t.jpg                             | Terang   | Botol Plastik  | Botol Plastik  | 0.9645 | TP
+74    | bp01_15_t.jpg                            | Terang   | Botol Plastik  | Botol Plastik  | 0.9591 | TP
+75    | bp01_30_t.jpg                            | Terang   | Botol Plastik  | Botol Plastik  | 0.9763 | TP
+76    | bp01_45_t.jpg                            | Terang   | Botol Plastik  | Botol Plastik  | 0.9826 | TP
+77    | bp01_60_t.jpg                            | Terang   | Botol Plastik  | Botol Plastik  | 0.9453 | TP
+78    | bp01_75_t.jpg                            | Terang   | Botol Plastik  | Botol Plastik  | 0.9631 | TP
+79    | bp01_90_t.jpg                            | Terang   | Botol Plastik  | Botol Plastik  | 0.9611 | TP
+80    | bp01_105_t.jpg                           | Terang   | Botol Plastik  | Botol Plastik  | 0.9831 | TP
+81    | bp01_120_t.jpg                           | Terang   | Botol Plastik  | Botol Plastik  | 0.9902 | TP
+82    | bp01_135_t.jpg                           | Terang   | Botol Plastik  | Botol Plastik  | 0.9897 | TP
+83    | bp01_150_t.jpg                           | Terang   | Botol Plastik  | Botol Plastik  | 0.9809 | TP
+84    | bp01_165_t.jpg                           | Terang   | Botol Plastik  | Botol Plastik  | 0.9409 | TP
+85    | bp01_180_t.jpg                           | Terang   | Botol Plastik  | Botol Plastik  | 0.9305 | TP
+86    | bp01_195_t.jpg                           | Terang   | Botol Plastik  | Botol Plastik  | 0.9720 | TP
+87    | bp01_210_t.jpg                           | Terang   | Botol Plastik  | Botol Plastik  | 0.9845 | TP
+88    | bp01_225_t.jpg                           | Terang   | Botol Plastik  | Botol Plastik  | 0.9855 | TP
+89    | bp01_240_t.jpg                           | Terang   | Botol Plastik  | Botol Plastik  | 0.9872 | TP
+90    | bp01_255_t.jpg                           | Terang   | Botol Plastik  | Botol Plastik  | 0.9851 | TP
+91    | bp01_270_t.jpg                           | Terang   | Botol Plastik  | Botol Plastik  | 0.9593 | TP
+92    | bp01_285_t.jpg                           | Terang   | Botol Plastik  | Botol Plastik  | 0.9570 | TP
+93    | bp01_300_t.jpg                           | Terang   | Botol Plastik  | Botol Plastik  | 0.9906 | TP
+94    | bp01_315_t.jpg                           | Terang   | Botol Plastik  | Botol Plastik  | 0.9884 | TP
+95    | bp01_330_t.jpg                           | Terang   | Botol Plastik  | Botol Plastik  | 0.9776 | TP
+96    | bp01_345_t.jpg                           | Terang   | Botol Plastik  | Botol Plastik  | 0.9426 | TP
+97    | bp02_0_t.jpg                             | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+98    | bp02_15_t.jpg                            | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+99    | bp02_30_t.jpg                            | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+100   | bp02_45_t.jpg                            | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+101   | bp02_60_t.jpg                            | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+102   | bp02_75_t.jpg                            | Terang   | Botol Plastik  | Botol Plastik  | 0.0279 | FN (IoU rendah)
+103   | bp02_90_t.jpg                            | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+104   | bp02_105_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+105   | bp02_120_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+106   | bp02_135_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+107   | bp02_150_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+108   | bp02_165_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+109   | bp02_180_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+110   | bp02_195_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+111   | bp02_210_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+112   | bp02_225_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+113   | bp02_240_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+114   | bp02_255_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+115   | bp02_270_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+116   | bp02_285_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+117   | bp02_300_t.jpg                           | Terang   | Botol Plastik  | Botol Plastik  | 0.0303 | FN (IoU rendah)
+118   | bp02_315_t.jpg                           | Terang   | Botol Plastik  | Botol Plastik  | 0.0278 | FN (IoU rendah)
+119   | bp02_330_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+120   | bp02_345_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+121   | bp03_0_t.jpg                             | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+122   | bp03_15_t.jpg                            | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+123   | bp03_30_t.jpg                            | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+124   | bp03_45_t.jpg                            | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+125   | bp03_60_t.jpg                            | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+126   | bp03_75_t.jpg                            | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+127   | bp03_90_t.jpg                            | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+128   | bp03_105_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+129   | bp03_120_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+130   | bp03_135_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+131   | bp03_150_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+132   | bp03_165_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+133   | bp03_180_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+134   | bp03_195_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+135   | bp03_210_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.1725 | FN+FP (salah kelas)
+136   | bp03_225_t.jpg                           | Terang   | Botol Plastik  | Kaleng         | 0.1519 | FN+FP (salah kelas)
+137   | bp03_240_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+138   | bp03_255_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+139   | bp03_270_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+140   | bp03_285_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+141   | bp03_300_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+142   | bp03_315_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+143   | bp03_330_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+144   | bp03_345_t.jpg                           | Terang   | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+145   | k01_0_t.jpg                              | Terang   | Kaleng         | Kaleng         | 0.9635 | TP
+146   | k01_15_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9886 | TP
+147   | k01_30_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9822 | TP
+148   | k01_45_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9754 | TP
+149   | k01_60_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9873 | TP
+150   | k01_75_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9815 | TP
+151   | k01_90_t.jpg                             | Terang   | Kaleng         | Kaleng         | 0.9704 | TP
+152   | k01_105_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9565 | TP
+153   | k01_120_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9735 | TP
+154   | k01_135_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9851 | TP
+155   | k01_150_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9870 | TP
+156   | k01_165_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9896 | TP
+157   | k01_180_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9684 | TP
+158   | k01_195_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9641 | TP
+159   | k01_210_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9829 | TP
+160   | k01_225_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9944 | TP
+161   | k01_240_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9749 | TP
+162   | k01_255_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9794 | TP
+163   | k01_270_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9700 | TP
+164   | k01_285_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9794 | TP
+165   | k01_300_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9764 | TP
+166   | k01_315_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9891 | TP
+167   | k01_330_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9925 | TP
+168   | k01_345_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9878 | TP
+169   | k02_0_t.jpg                              | Terang   | Kaleng         | Botol Beling   | 0.9850 | FN+FP (salah kelas)
+170   | k02_15_t.jpg                             | Terang   | Kaleng         | Botol Beling   | 0.9794 | FN+FP (salah kelas)
+171   | k02_30_t.jpg                             | Terang   | Kaleng         | Botol Beling   | 0.9822 | FN+FP (salah kelas)
+172   | k02_45_t.jpg                             | Terang   | Kaleng         | Botol Beling   | 0.9865 | FN+FP (salah kelas)
+173   | k02_60_t.jpg                             | Terang   | Kaleng         | Botol Beling   | 0.9927 | FN+FP (salah kelas)
+174   | k02_75_t.jpg                             | Terang   | Kaleng         | Botol Beling   | 0.9804 | FN+FP (salah kelas)
+175   | k02_90_t.jpg                             | Terang   | Kaleng         | Botol Beling   | 0.9696 | FN+FP (salah kelas)
+176   | k02_105_t.jpg                            | Terang   | Kaleng         | Botol Beling   | 0.9912 | FN+FP (salah kelas)
+177   | k02_120_t.jpg                            | Terang   | Kaleng         | Botol Beling   | 0.9841 | FN+FP (salah kelas)
+178   | k02_135_t.jpg                            | Terang   | Kaleng         | Botol Beling   | 0.9688 | FN+FP (salah kelas)
+179   | k02_150_t.jpg                            | Terang   | Kaleng         | Botol Beling   | 0.9928 | FN+FP (salah kelas)
+180   | k02_165_t.jpg                            | Terang   | Kaleng         | Botol Beling   | 0.9878 | FN+FP (salah kelas)
+181   | k02_180_t.jpg                            | Terang   | Kaleng         | Botol Beling   | 0.9426 | FN+FP (salah kelas)
+182   | k02_195_t.jpg                            | Terang   | Kaleng         | Botol Plastik  | 0.9868 | FN+FP (salah kelas)
+183   | k02_210_t.jpg                            | Terang   | Kaleng         | Botol Plastik  | 0.9842 | FN+FP (salah kelas)
+184   | k02_225_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9585 | TP
+185   | k02_240_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9799 | TP
+186   | k02_255_t.jpg                            | Terang   | Kaleng         | Botol Beling   | 0.9826 | FN+FP (salah kelas)
+187   | k02_270_t.jpg                            | Terang   | Kaleng         | Botol Beling   | 0.9696 | FN+FP (salah kelas)
+188   | k02_285_t.jpg                            | Terang   | Kaleng         | Botol Plastik  | 0.9826 | FN+FP (salah kelas)
+189   | k02_300_t.jpg                            | Terang   | Kaleng         | Botol Plastik  | 0.9897 | FN+FP (salah kelas)
+190   | k02_315_t.jpg                            | Terang   | Kaleng         | Botol Plastik  | 0.9885 | FN+FP (salah kelas)
+191   | k02_330_t.jpg                            | Terang   | Kaleng         | Botol Plastik  | 0.9924 | FN+FP (salah kelas)
+192   | k02_345_t.jpg                            | Terang   | Kaleng         | Botol Beling   | 0.9777 | FN+FP (salah kelas)
+193   | k03_0_t.jpg                              | Terang   | Kaleng         | Botol Beling   | 0.9768 | FN+FP (salah kelas)
+194   | k03_15_t.jpg                             | Terang   | Kaleng         | Botol Beling   | 0.9877 | FN+FP (salah kelas)
+195   | k03_30_t.jpg                             | Terang   | Kaleng         | Botol Beling   | 0.9827 | FN+FP (salah kelas)
+196   | k03_45_t.jpg                             | Terang   | Kaleng         | Botol Beling   | 0.9843 | FN+FP (salah kelas)
+197   | k03_60_t.jpg                             | Terang   | Kaleng         | Botol Beling   | 0.9899 | FN+FP (salah kelas)
+198   | k03_75_t.jpg                             | Terang   | Kaleng         | Botol Plastik  | 0.9785 | FN+FP (salah kelas)
+199   | k03_90_t.jpg                             | Terang   | Kaleng         | Botol Beling   | 0.9388 | FN+FP (salah kelas)
+200   | k03_105_t.jpg                            | Terang   | Kaleng         | Botol Beling   | 0.9703 | FN+FP (salah kelas)
+201   | k03_120_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9949 | TP
+202   | k03_135_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9911 | TP
+203   | k03_150_t.jpg                            | Terang   | Kaleng         | Botol Beling   | 0.9723 | FN+FP (salah kelas)
+204   | k03_165_t.jpg                            | Terang   | Kaleng         | Botol Beling   | 0.9766 | FN+FP (salah kelas)
+205   | k03_180_t.jpg                            | Terang   | Kaleng         | Botol Beling   | 0.4166 | FN+FP (salah kelas)
+206   | k03_195_t.jpg                            | Terang   | Kaleng         | Botol Beling   | 0.9925 | FN+FP (salah kelas)
+207   | k03_210_t.jpg                            | Terang   | Kaleng         | Botol Beling   | 0.9811 | FN+FP (salah kelas)
+208   | k03_225_t.jpg                            | Terang   | Kaleng         | Botol Beling   | 0.9847 | FN+FP (salah kelas)
+209   | k03_240_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9783 | TP
+210   | k03_255_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9847 | TP
+211   | k03_270_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9687 | TP
+212   | k03_285_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9746 | TP
+213   | k03_300_t.jpg                            | Terang   | Kaleng         | Botol Plastik  | 0.9783 | FN+FP (salah kelas)
+214   | k03_315_t.jpg                            | Terang   | Kaleng         | Botol Beling   | 0.9877 | FN+FP (salah kelas)
+215   | k03_330_t.jpg                            | Terang   | Kaleng         | Kaleng         | 0.9834 | TP
+216   | k03_345_t.jpg                            | Terang   | Kaleng         | Botol Beling   | 0.9812 | FN+FP (salah kelas)
+
+--- KELOMPOK PENCAHAYAAN: REDUP ---
+1     | bb01_0_r.jpg                             | Redup    | Botol Beling   | Botol Beling   | 0.9804 | TP
+2     | bb01_15_r.jpg                            | Redup    | Botol Beling   | Botol Beling   | 0.9634 | TP
+3     | bb01_30_r.jpg                            | Redup    | Botol Beling   | Botol Beling   | 0.9790 | TP
+4     | bb01_45_r.jpg                            | Redup    | Botol Beling   | Botol Beling   | 0.9812 | TP
+5     | bb01_60_r.jpg                            | Redup    | Botol Beling   | Botol Beling   | 0.9806 | TP
+6     | bb01_75_r.jpg                            | Redup    | Botol Beling   | -              | 0.0000 | FN (tidak terdeteksi)
+7     | bb01_90_r.jpg                            | Redup    | Botol Beling   | Botol Beling   | 0.9674 | TP
+8     | bb01_105_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9664 | TP
+9     | bb01_120_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9727 | TP
+10    | bb01_135_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9808 | TP
+11    | bb01_150_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9543 | TP
+12    | bb01_165_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.6619 | TP
+13    | bb01_180_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9548 | TP
+14    | bb01_195_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9782 | TP
+15    | bb01_210_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9718 | TP
+16    | bb01_225_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9791 | TP
+17    | bb01_240_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9752 | TP
+18    | bb01_255_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9773 | TP
+19    | bb01_270_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9645 | TP
+20    | bb01_285_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9860 | TP
+21    | bb01_300_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9804 | TP
+22    | bb01_315_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9839 | TP
+23    | bb01_330_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9767 | TP
+24    | bb01_345_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.8880 | TP
+25    | bb02_0_r.jpg                             | Redup    | Botol Beling   | Botol Plastik  | 0.9893 | FN+FP (salah kelas)
+26    | bb02_15_r.jpg                            | Redup    | Botol Beling   | Botol Plastik  | 0.9682 | FN+FP (salah kelas)
+27    | bb02_30_r.jpg                            | Redup    | Botol Beling   | Botol Plastik  | 0.9376 | FN+FP (salah kelas)
+28    | bb02_45_r.jpg                            | Redup    | Botol Beling   | Botol Plastik  | 0.9540 | FN+FP (salah kelas)
+29    | bb02_60_r.jpg                            | Redup    | Botol Beling   | Botol Beling   | 0.9631 | TP
+30    | bb02_75_r.jpg                            | Redup    | Botol Beling   | Botol Plastik  | 0.9739 | FN+FP (salah kelas)
+31    | bb02_90_r.jpg                            | Redup    | Botol Beling   | Botol Plastik  | 0.9827 | FN+FP (salah kelas)
+32    | bb02_105_r.jpg                           | Redup    | Botol Beling   | Botol Plastik  | 0.9885 | FN+FP (salah kelas)
+33    | bb02_120_r.jpg                           | Redup    | Botol Beling   | Kaleng         | 0.9882 | FN+FP (salah kelas)
+34    | bb02_135_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9548 | TP
+35    | bb02_150_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9491 | TP
+36    | bb02_165_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9155 | TP
+37    | bb02_180_r.jpg                           | Redup    | Botol Beling   | Botol Plastik  | 0.8699 | FN+FP (salah kelas)
+38    | bb02_195_r.jpg                           | Redup    | Botol Beling   | Botol Plastik  | 0.9063 | FN+FP (salah kelas)
+39    | bb02_210_r.jpg                           | Redup    | Botol Beling   | Botol Plastik  | 0.9347 | FN+FP (salah kelas)
+40    | bb02_225_r.jpg                           | Redup    | Botol Beling   | Botol Plastik  | 0.9840 | FN+FP (salah kelas)
+41    | bb02_240_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9919 | TP
+42    | bb02_255_r.jpg                           | Redup    | Botol Beling   | Botol Plastik  | 0.9919 | FN+FP (salah kelas)
+43    | bb02_270_r.jpg                           | Redup    | Botol Beling   | Botol Plastik  | 0.9789 | FN+FP (salah kelas)
+44    | bb02_285_r.jpg                           | Redup    | Botol Beling   | Botol Plastik  | 0.9768 | FN+FP (salah kelas)
+45    | bb02_300_r.jpg                           | Redup    | Botol Beling   | Kaleng         | 0.9597 | FN+FP (salah kelas)
+46    | bb02_315_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9832 | TP
+47    | bb02_330_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9745 | TP
+48    | bb02_345_r.jpg                           | Redup    | Botol Beling   | Botol Plastik  | 0.9269 | FN+FP (salah kelas)
+49    | bb03_0_r.jpg                             | Redup    | Botol Beling   | Botol Beling   | 0.9655 | TP
+50    | bb03_15_r.jpg                            | Redup    | Botol Beling   | Botol Beling   | 0.9887 | TP
+51    | bb03_30_r.jpg                            | Redup    | Botol Beling   | Botol Beling   | 0.9770 | TP
+52    | bb03_45_r.jpg                            | Redup    | Botol Beling   | Botol Beling   | 0.9802 | TP
+53    | bb03_60_r.jpg                            | Redup    | Botol Beling   | Botol Beling   | 0.9506 | TP
+54    | bb03_75_r.jpg                            | Redup    | Botol Beling   | -              | 0.0000 | FN (tidak terdeteksi)
+55    | bb03_90_r.jpg                            | Redup    | Botol Beling   | Botol Beling   | 0.9430 | TP
+56    | bb03_105_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9865 | TP
+57    | bb03_120_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9772 | TP
+58    | bb03_135_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9866 | TP
+59    | bb03_150_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9775 | TP
+60    | bb03_165_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9430 | TP
+61    | bb03_180_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.7877 | TP
+62    | bb03_195_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9757 | TP
+63    | bb03_210_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9904 | TP
+64    | bb03_225_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9882 | TP
+65    | bb03_240_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9957 | TP
+66    | bb03_255_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9868 | TP
+67    | bb03_270_r.jpg                           | Redup    | Botol Beling   | -              | 0.0000 | FN (tidak terdeteksi)
+68    | bb03_285_r.jpg                           | Redup    | Botol Beling   | -              | 0.0000 | FN (tidak terdeteksi)
+69    | bb03_300_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9686 | TP
+70    | bb03_315_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9779 | TP
+71    | bb03_330_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9750 | TP
+72    | bb03_345_r.jpg                           | Redup    | Botol Beling   | Botol Beling   | 0.9412 | TP
+73    | bp01_0_r.jpg                             | Redup    | Botol Plastik  | Botol Beling   | 0.7117 | FN+FP (salah kelas)
+74    | bp01_15_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.9618 | FN+FP (salah kelas)
+75    | bp01_30_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.9902 | FN+FP (salah kelas)
+76    | bp01_45_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.8352 | FN+FP (salah kelas)
+77    | bp01_60_r.jpg                            | Redup    | Botol Plastik  | Botol Plastik  | 0.9654 | TP
+78    | bp01_75_r.jpg                            | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+79    | bp01_90_r.jpg                            | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+80    | bp01_105_r.jpg                           | Redup    | Botol Plastik  | Botol Plastik  | 0.9705 | TP
+81    | bp01_120_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9422 | FN+FP (salah kelas)
+82    | bp01_135_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.8619 | FN+FP (salah kelas)
+83    | bp01_150_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.5975 | FN+FP (salah kelas)
+84    | bp01_165_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.5528 | FN+FP (salah kelas)
+85    | bp01_180_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.6638 | FN+FP (salah kelas)
+86    | bp01_195_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.5656 | FN+FP (salah kelas)
+87    | bp01_210_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9736 | FN+FP (salah kelas)
+88    | bp01_225_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9844 | FN+FP (salah kelas)
+89    | bp01_240_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9951 | FN+FP (salah kelas)
+90    | bp01_255_r.jpg                           | Redup    | Botol Plastik  | Botol Plastik  | 0.9680 | TP
+91    | bp01_270_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+92    | bp01_285_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+93    | bp01_300_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+94    | bp01_315_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.6265 | FN+FP (salah kelas)
+95    | bp01_330_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.7107 | FN+FP (salah kelas)
+96    | bp01_345_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9106 | FN+FP (salah kelas)
+97    | bp02_0_r.jpg                             | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+98    | bp02_15_r.jpg                            | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+99    | bp02_30_r.jpg                            | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+100   | bp02_45_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.9136 | FN+FP (salah kelas)
+101   | bp02_60_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.9699 | FN+FP (salah kelas)
+102   | bp02_75_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.0889 | FN+FP (salah kelas)
+103   | bp02_90_r.jpg                            | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+104   | bp02_105_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+105   | bp02_120_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+106   | bp02_135_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+107   | bp02_150_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+108   | bp02_165_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+109   | bp02_180_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+110   | bp02_195_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+111   | bp02_210_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+112   | bp02_225_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+113   | bp02_240_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+114   | bp02_255_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+115   | bp02_270_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+116   | bp02_285_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+117   | bp02_300_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+118   | bp02_315_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.0447 | FN+FP (salah kelas)
+119   | bp02_330_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.0426 | FN+FP (salah kelas)
+120   | bp02_345_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+121   | bp03_0_r.jpg                             | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+122   | bp03_15_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.6109 | FN+FP (salah kelas)
+123   | bp03_30_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.4485 | FN+FP (salah kelas)
+124   | bp03_45_r.jpg                            | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+125   | bp03_60_r.jpg                            | Redup    | Botol Plastik  | Botol Beling   | 0.9050 | FN+FP (salah kelas)
+126   | bp03_75_r.jpg                            | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+127   | bp03_90_r.jpg                            | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+128   | bp03_105_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.8803 | FN+FP (salah kelas)
+129   | bp03_120_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.7596 | FN+FP (salah kelas)
+130   | bp03_135_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9051 | FN+FP (salah kelas)
+131   | bp03_150_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9033 | FN+FP (salah kelas)
+132   | bp03_165_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+133   | bp03_180_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+134   | bp03_195_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+135   | bp03_210_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+136   | bp03_225_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.9724 | FN+FP (salah kelas)
+137   | bp03_240_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.8200 | FN+FP (salah kelas)
+138   | bp03_255_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+139   | bp03_270_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.0671 | FN+FP (salah kelas)
+140   | bp03_285_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+141   | bp03_300_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.7800 | FN+FP (salah kelas)
+142   | bp03_315_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.7015 | FN+FP (salah kelas)
+143   | bp03_330_r.jpg                           | Redup    | Botol Plastik  | Botol Beling   | 0.5820 | FN+FP (salah kelas)
+144   | bp03_345_r.jpg                           | Redup    | Botol Plastik  | -              | 0.0000 | FN (tidak terdeteksi)
+145   | k01_0_r.jpg                              | Redup    | Kaleng         | -              | 0.0000 | FN (tidak terdeteksi)
+146   | k01_15_r.jpg                             | Redup    | Kaleng         | Kaleng         | 0.9829 | TP
+147   | k01_30_r.jpg                             | Redup    | Kaleng         | Botol Plastik  | 0.9790 | FN+FP (salah kelas)
+148   | k01_45_r.jpg                             | Redup    | Kaleng         | Kaleng         | 0.9830 | TP
+149   | k01_60_r.jpg                             | Redup    | Kaleng         | Botol Plastik  | 0.9948 | FN+FP (salah kelas)
+150   | k01_75_r.jpg                             | Redup    | Kaleng         | Botol Beling   | 0.9939 | FN+FP (salah kelas)
+151   | k01_90_r.jpg                             | Redup    | Kaleng         | Kaleng         | 0.9576 | TP
+152   | k01_105_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.9623 | FN+FP (salah kelas)
+153   | k01_120_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.9875 | FN+FP (salah kelas)
+154   | k01_135_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.9848 | FN+FP (salah kelas)
+155   | k01_150_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.9827 | FN+FP (salah kelas)
+156   | k01_165_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.9827 | FN+FP (salah kelas)
+157   | k01_180_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.9610 | FN+FP (salah kelas)
+158   | k01_195_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.9747 | FN+FP (salah kelas)
+159   | k01_210_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.9898 | FN+FP (salah kelas)
+160   | k01_225_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.9854 | FN+FP (salah kelas)
+161   | k01_240_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.9711 | FN+FP (salah kelas)
+162   | k01_255_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.9830 | FN+FP (salah kelas)
+163   | k01_270_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.9780 | FN+FP (salah kelas)
+164   | k01_285_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.9881 | FN+FP (salah kelas)
+165   | k01_300_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.9814 | FN+FP (salah kelas)
+166   | k01_315_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.9896 | FN+FP (salah kelas)
+167   | k01_330_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.9787 | FN+FP (salah kelas)
+168   | k01_345_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.9890 | FN+FP (salah kelas)
+169   | k02_0_r.jpg                              | Redup    | Kaleng         | Botol Beling   | 0.9574 | FN+FP (salah kelas)
+170   | k02_15_r.jpg                             | Redup    | Kaleng         | Botol Beling   | 0.9692 | FN+FP (salah kelas)
+171   | k02_30_r.jpg                             | Redup    | Kaleng         | Botol Plastik  | 0.9873 | FN+FP (salah kelas)
+172   | k02_45_r.jpg                             | Redup    | Kaleng         | Botol Plastik  | 0.9934 | FN+FP (salah kelas)
+173   | k02_60_r.jpg                             | Redup    | Kaleng         | Botol Plastik  | 0.9946 | FN+FP (salah kelas)
+174   | k02_75_r.jpg                             | Redup    | Kaleng         | Botol Plastik  | 0.9914 | FN+FP (salah kelas)
+175   | k02_90_r.jpg                             | Redup    | Kaleng         | -              | 0.0000 | FN (tidak terdeteksi)
+176   | k02_105_r.jpg                            | Redup    | Kaleng         | -              | 0.0000 | FN (tidak terdeteksi)
+177   | k02_120_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.9829 | FN+FP (salah kelas)
+178   | k02_135_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.9773 | FN+FP (salah kelas)
+179   | k02_150_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.9721 | FN+FP (salah kelas)
+180   | k02_165_r.jpg                            | Redup    | Kaleng         | -              | 0.0000 | FN (tidak terdeteksi)
+181   | k02_180_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.9088 | FN+FP (salah kelas)
+182   | k02_195_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.9827 | FN+FP (salah kelas)
+183   | k02_210_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.9701 | FN+FP (salah kelas)
+184   | k02_225_r.jpg                            | Redup    | Kaleng         | -              | 0.0000 | FN (tidak terdeteksi)
+185   | k02_240_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.5973 | FN+FP (salah kelas)
+186   | k02_255_r.jpg                            | Redup    | Kaleng         | -              | 0.0000 | FN (tidak terdeteksi)
+187   | k02_270_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.2721 | FN+FP (salah kelas)
+188   | k02_285_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.2880 | FN+FP (salah kelas)
+189   | k02_300_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.9847 | FN+FP (salah kelas)
+190   | k02_315_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.9920 | FN+FP (salah kelas)
+191   | k02_330_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.9872 | FN+FP (salah kelas)
+192   | k02_345_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.9757 | FN+FP (salah kelas)
+193   | k03_0_r.jpg                              | Redup    | Kaleng         | Botol Beling   | 0.9841 | FN+FP (salah kelas)
+194   | k03_15_r.jpg                             | Redup    | Kaleng         | Botol Beling   | 0.9882 | FN+FP (salah kelas)
+195   | k03_30_r.jpg                             | Redup    | Kaleng         | Botol Plastik  | 0.9876 | FN+FP (salah kelas)
+196   | k03_45_r.jpg                             | Redup    | Kaleng         | Botol Plastik  | 0.9871 | FN+FP (salah kelas)
+197   | k03_60_r.jpg                             | Redup    | Kaleng         | Botol Plastik  | 0.9900 | FN+FP (salah kelas)
+198   | k03_75_r.jpg                             | Redup    | Kaleng         | Botol Plastik  | 0.9915 | FN+FP (salah kelas)
+199   | k03_90_r.jpg                             | Redup    | Kaleng         | Botol Plastik  | 0.7117 | FN+FP (salah kelas)
+200   | k03_105_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.9702 | FN+FP (salah kelas)
+201   | k03_120_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.9369 | FN+FP (salah kelas)
+202   | k03_135_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.9881 | FN+FP (salah kelas)
+203   | k03_150_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.9866 | FN+FP (salah kelas)
+204   | k03_165_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.9772 | FN+FP (salah kelas)
+205   | k03_180_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.9622 | FN+FP (salah kelas)
+206   | k03_195_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.9854 | FN+FP (salah kelas)
+207   | k03_210_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.9869 | FN+FP (salah kelas)
+208   | k03_225_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.9730 | FN+FP (salah kelas)
+209   | k03_240_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.9761 | FN+FP (salah kelas)
+210   | k03_255_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.9868 | FN+FP (salah kelas)
+211   | k03_270_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.3815 | FN+FP (salah kelas)
+212   | k03_285_r.jpg                            | Redup    | Kaleng         | Botol Beling   | 0.3421 | FN+FP (salah kelas)
+213   | k03_300_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.9824 | FN+FP (salah kelas)
+214   | k03_315_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.9784 | FN+FP (salah kelas)
+215   | k03_330_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.9885 | FN+FP (salah kelas)
+216   | k03_345_r.jpg                            | Redup    | Kaleng         | Botol Plastik  | 0.9818 | FN+FP (salah kelas)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
